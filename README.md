@@ -6,9 +6,9 @@ Task to be done:-
 
 - [ ] creating static layout
   - [x] adding reset.scss typography.scss and variable.scss
-  - [x] typography is set according to font size,weight and letter spacing
-  - [x] variable file colors are defined color selected from reference image as well as open color website
-  - [x] reseting cross browser margin padding to website
+    - [x] typography is set according to font size,weight and letter spacing
+    - [x] variable file colors are defined color selected from reference image as well as open color website
+    - [x] reseting cross browser margin padding to website
 - [ ] adding functionality to website
 - [ ] adding infinite scrolling
 
