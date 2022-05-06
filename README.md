@@ -12,6 +12,55 @@ Task to be done:-
 - [ ] adding functionality to website
 - [ ] adding infinite scrolling
 
+## Typography selected for project
+
+**key points**
+
+1. 1 rem is made equal to 1px
+2. by making html font-size 62.5% which is (10/16)\*100
+3. this will help us to easily make font-size responsive on zoom in zoom out
+
+- h1
+
+  - font-size: 9.6rem;
+  - font-weight: 600;
+  - letter-spacing: -1.5px;
+
+- h4
+
+  - font-size: 3.3rem;
+  - font-weight: 400;
+  - letter-spacing: 0.25px;
+
+- subtitle
+
+  - font-size: 1.3rem;
+  - font-weight: 300;
+  - letter-spacing: 0.4px;
+
+- tag
+
+  - font-size: 1rem;
+  - font-weight: 600;
+  - letter-spacing: 1.25px;
+
+- body
+
+  - font-size: 1.5rem;
+  - font-weight: 400;
+  - letter-spacing: 0.5px;
+
+- button
+
+  - font-size: 1.3rem;
+  - font-weight: 400;
+  - letter-spacing: 1.25px;
+
+- tabs
+  - font-size: 1.3rem;
+  - font-weight: 400;
+  - letter-spacing: 1.25px;
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
