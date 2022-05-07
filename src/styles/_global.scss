@@ -1,0 +1,13 @@
+a {
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: none;
+    color: $text-black;
+  }
+}
+.btn {
+  border: none;
+  background: transparent;
+}

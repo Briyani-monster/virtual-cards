@@ -6,9 +6,11 @@ Task to be done:-
 
 - [ ] creating static layout
   - [x] **PREPARATION** adding reset.scss typography.scss and variable.scss
-    - [x] typography is set according to font size,weight and letter spacing
-    - [x] variable file colors are defined color selected from reference image as well as open color website
-    - [x] reseting cross browser margin padding to website
+  - [x] typography is set according to font size,weight and letter spacing
+  - [x] variable file colors are defined color selected from reference image as well as open color website
+  - [x] reseting cross browser margin padding to website
+  - [x] creating Component folder and creating header component
+    - [x] installing icons class
 - [ ] adding functionality to website
 - [ ] adding infinite scrolling
 
@@ -60,6 +62,15 @@ Task to be done:-
   - font-size: 1.3rem;
   - font-weight: 400;
   - letter-spacing: 1.25px;
+
+## for setting up icon installation
+
+    1. use material ui
+    2. `npm install @mui/material@5.6.4 @emotion/react@11.9.0 @emotion/styled@11.8.1`
+    3. `npm install @mui/icons-material@5.6.2`
+
+    after this we can import by searching here from https://mui.com/material-ui/material-icons/#main-content
+    like this `import AddIcon from '@mui/icons-material/Add';`
 
 # Getting Started with Create React App
 
