@@ -1,69 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DataContext } from "../context/DataProvider";
 import Card from "./Card/Card";
 
 const Cards = () => {
+  const { mainCards } = useContext(DataContext);
+  // console.log(mainCards);
   return (
     <div className="cards">
-      <Card
-        spent={{
-          value: 100,
-          currency: "SGD",
-        }}
-        availabletospend={{
-          value: 1000,
-          currency: "SGD",
-        }}
-        expiry={"9 feb 2022"}
-        type={"burner"}
-        budgetName={"software subscription"}
-        name={"Mixmax"}
-        cardholder={"vishal"}
-      />
-      <Card
-        spent={{
-          value: 100,
-          currency: "SGD",
-        }}
-        availabletospend={{
-          value: 1000,
-          currency: "SGD",
-        }}
-        expiry={"9 feb 2022"}
-        type={"burner"}
-        budgetName={"software subscription"}
-        name={"Mixmax"}
-        cardholder={"vishal"}
-      />
-      <Card
-        spent={{
-          value: 100,
-          currency: "SGD",
-        }}
-        availabletospend={{
-          value: 0,
-          currency: "SGD",
-        }}
-        expiry={"9 feb 2022"}
-        type={"subscribe"}
-        budgetName={"software subscription"}
-        name={"Mixmax"}
-        cardholder={"vishal"}
-      />
-      <Card
-        spent={{
-          value: 100,
-          currency: "SGD",
-        }}
-        availabletospend={{
-          value: 1000,
-          currency: "SGD",
-        }}
-        expiry={"9 feb 2022"}
-        type={"burner"}
-        budgetName={"software subscription"}
-        name={"Mixmax"}
-        cardholder={"vishal"}
-      />
+      {/* {mainCards.map((card) => console.log(card))} */}
+      {mainCards.map((card) => (
+        <Card
+          key={card.owner_id}
+          spent={card.spent}
+          availabletospend={card.available_to_spend}
+          expiry={card.expiry}
+          type={card.card_type}
+          budgetName={card.budget_name}
+          name={card.name}
+          cardholder={card.card_holder}
+        />
+      ))}
     </div>
   );
 };

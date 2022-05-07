@@ -167,6 +167,11 @@ a:link, a:visited, a:hover, a:active {
 .main__header__left .tab {
   font-weight: 600;
   color: #868e96;
+  cursor: pointer;
+}
+
+.main__header__left .tab:hover {
+  color: #232323;
 }
 
 .main__header__left .tab.active {
@@ -286,8 +291,24 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .card__header__left p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
   font-weight: 400;
   color: #868e96;
+}
+
+.card__header__left p .dot {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: #868e96;
+  opacity: 0.6;
 }
 
 .card__header__right .icon {

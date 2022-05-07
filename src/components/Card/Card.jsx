@@ -19,7 +19,8 @@ const Card = ({
         <div className="card__header__left">
           <h3 className="h4">{name}</h3>
           <p className="subtitle">
-            <span>{cardholder}</span>. <span>{budgetName}</span>
+            <span>{cardholder}</span>
+            <span className="dot"></span> <span>{budgetName}</span>
           </p>
         </div>
         <div className="card__header__right">

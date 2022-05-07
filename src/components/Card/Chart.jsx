@@ -9,13 +9,13 @@ const Chart = ({ spent, available }) => {
       <div
         className="card__chart__spent"
         style={{
-          width: `${Math.round(availablepercentage)}%`,
+          width: `${Math.round(spentpercentage)}%`,
         }}
       ></div>
       <div
         className="card__chart__available"
         style={{
-          width: `${Math.round(spentpercentage)}%`,
+          width: `${Math.round(availablepercentage)}%`,
         }}
       ></div>
     </div>

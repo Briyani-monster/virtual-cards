@@ -10,6 +10,10 @@
     .tab {
       font-weight: 600;
       color: $text-color-grey;
+      cursor: pointer;
+      &:hover {
+        color: $text-black;
+      }
       &.active {
         color: $text-black;
         position: relative;
