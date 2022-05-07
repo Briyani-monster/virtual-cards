@@ -22,6 +22,10 @@ body {
   color: #232323;
 }
 
+input {
+  border: none;
+}
+
 .h1 {
   font-size: 4.6rem;
   font-weight: 600;
@@ -194,6 +198,60 @@ a:link, a:visited, a:hover, a:active {
 
 .main__header__right .MuiSvgIcon-root {
   font-size: 2rem;
+  cursor: pointer;
+}
+
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 20px;
+  padding: 3rem;
+}
+
+.filter.active input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filter__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.filter__search input {
+  display: none;
+  border: 1px solid #868e96;
+  padding: 3px 8px;
+  outline: none;
+  cursor: pointer;
+}
+
+.filter__search .MuiSvgIcon-root {
+  font-size: 3rem;
+}
+
+.filter_filterBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #868e96;
+  border-radius: 5px;
+  padding: 5px 10px;
   cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */

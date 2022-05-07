@@ -1,0 +1,37 @@
+.filter {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 3rem;
+  &.active {
+    & input {
+      display: flex;
+    }
+  }
+  &__search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    & input {
+      display: none;
+      border: 1px solid $text-color-grey;
+      padding: 3px 8px;
+      outline: none;
+      cursor: pointer;
+    }
+    & .MuiSvgIcon-root {
+      font-size: 3rem;
+    }
+  }
+  &_filterBtn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: $bg-grey;
+    border: 1px solid $text-color-grey;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+}
