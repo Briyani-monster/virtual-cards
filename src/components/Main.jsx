@@ -1,4 +1,5 @@
 import React from "react";
+import Cards from "./Cards";
 import Filter from "./Filter";
 
 import MainHeader from "./Main/MainHeader";
@@ -7,6 +8,7 @@ const Main = () => {
     <>
       <MainHeader />
       <Filter />
+      <Cards />
     </>
   );
 };

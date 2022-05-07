@@ -254,4 +254,152 @@ a:link, a:visited, a:hover, a:active {
   padding: 5px 10px;
   cursor: pointer;
 }
+
+.cards {
+  padding: 2rem 10rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  row-gap: 5rem;
+  -webkit-column-gap: 5rem;
+          column-gap: 5rem;
+}
+
+.card {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 15px;
+  text-transform: capitalize;
+}
+
+.card__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__header__left p {
+  font-weight: 400;
+  color: #868e96;
+}
+
+.card__header__right .icon {
+  width: 4.5rem;
+  height: 4.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffdeeb;
+  border-radius: 50%;
+}
+
+.card__header__right .icon svg {
+  font-size: 3rem;
+  color: #e64980;
+}
+
+.card__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem 0;
+}
+
+.card__body p span {
+  font-weight: 400;
+  color: #868e96;
+}
+
+.card__body__btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #868e96;
+  padding: 3px 10px;
+  border-radius: 5px;
+  border: 1px solid #868e96;
+}
+
+.card__chart {
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.card__chart__spent {
+  background-color: #e64980;
+  height: 10px;
+}
+
+.card__chart__available {
+  height: 10px;
+  background-color: #37624d;
+}
+
+.card__chart__description {
+  padding-top: 20px;
+}
+
+.card__chart__description__spent span {
+  background-color: #e64980;
+}
+
+.card__chart__description__available span {
+  background-color: #37624d;
+}
+
+.card__chart__description__spent, .card__chart__description__available {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__chart__description__spent__heading, .card__chart__description__available__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.card__chart__description__spent__heading span, .card__chart__description__available__heading span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.card__chart__description__spent__heading div, .card__chart__description__available__heading div {
+  font-weight: 400;
+}
 /*# sourceMappingURL=index.css.map */
