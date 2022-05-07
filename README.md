@@ -5,6 +5,7 @@ Mock api hosted here:- https://raw.githubusercontent.com/Briyani-monster/virtual
 Task to be done:-
 
 - [ ] creating static layout
+
   - [x] **PREPARATION** adding reset.scss typography.scss and variable.scss
     - [x] typography is set according to font size,weight and letter spacing
     - [x] variable file colors are defined color selected from reference image as well as open color website
@@ -13,7 +14,9 @@ Task to be done:-
     - [x] installing icons class
     - [x] starting main component
     - [x] styling filter
-    - [ ] styling cards
+    - [x] styling cards
+    - [x] installing axios
+
 - [ ] adding functionality to website
 - [ ] adding infinite scrolling
 
@@ -74,6 +77,14 @@ Task to be done:-
 
     after this we can import by searching here from https://mui.com/material-ui/material-icons/#main-content
     like this `import AddIcon from '@mui/icons-material/Add';`
+
+## For Installing Axios
+
+For fetching better way in react
+`npm install axios@0.24.0`
+
+import axios
+`import axios from 'axios'`
 
 # Getting Started with Create React App
 
