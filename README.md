@@ -15,9 +15,12 @@ Task to be done:-
     - [x] starting main component
     - [x] styling filter
     - [x] styling cards
-    - [x] installing axios
 
 - [ ] adding functionality to website
+  - [x] installing axios
+  - [x] setting up context
+  - [x] installing react-router and setting up routing
+  - [x] tab functionality is completed
 - [ ] adding infinite scrolling
 
 ## Typography selected for project

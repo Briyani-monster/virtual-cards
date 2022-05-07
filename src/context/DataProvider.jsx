@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect } from "react";
-
+import axios from "axios";
 export const DataContext = createContext([]);
 const DataProvider = ({ children }) => {
   const [mainCards, setMainCards] = useState([]);
@@ -9,7 +9,19 @@ const DataProvider = ({ children }) => {
   const [BlockedCards, setBlockedCards] = useState([]);
   const [filtervalue, setFilterValue] = useState([]);
   const [tabType, setTabType] = useState("all");
-
+  useEffect(() => {
+    axios
+      .get(
+        `https://raw.githubusercontent.com/Briyani-monster/virtual-card/gh-pages/data.json`
+      )
+      .then((res) => {
+        const persons = res.data;
+        setMainCards(persons.data);
+      });
+    setAllCards(mainCards);
+    setYourCards(mainCards.filter((card) => card.card_holder === "ashish"));
+    setBlockedCards(mainCards.filter((card) => card.status === "blocked"));
+  }, [mainCards]);
   return (
     <DataContext.Provider
       value={{

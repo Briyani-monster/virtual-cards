@@ -2,13 +2,12 @@ import React, { useContext } from "react";
 import { DataContext } from "../context/DataProvider";
 import Card from "./Card/Card";
 
-const Cards = () => {
-  const { mainCards } = useContext(DataContext);
+const Cards = ({ cards }) => {
   // console.log(mainCards);
   return (
     <div className="cards">
       {/* {mainCards.map((card) => console.log(card))} */}
-      {mainCards.map((card) => (
+      {cards.map((card) => (
         <Card
           key={card.owner_id}
           spent={card.spent}
