@@ -12,6 +12,8 @@ Task to be done:-
   - [x] creating Component folder and creating header component
     - [x] installing icons class
     - [x] starting main component
+    - [x] styling filter
+    - [ ] styling cards
 - [ ] adding functionality to website
 - [ ] adding infinite scrolling
 
