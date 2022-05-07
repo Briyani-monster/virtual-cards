@@ -5,28 +5,31 @@ import { Link } from "react-router-dom";
 import { DataContext } from "../../context/DataProvider";
 
 const MainHeader = () => {
-  const { setTabType, tabType } = useContext(DataContext);
-
+  const { setTabType, tabType, setOpenSearch } = useContext(DataContext);
+  const onClickHandler = (data) => {
+    setTabType(data);
+    // setOpenSearch(false);
+  };
   return (
     <div className="main__header">
       <div className="main__header__left">
         <Link
           to="/your"
-          onClick={() => setTabType("your")}
+          onClick={() => onClickHandler("your")}
           className={`subtitle ${tabType === "your" ? "active" : ""} btn tab`}
         >
           Your
         </Link>
         <Link
           to="/"
-          onClick={() => setTabType("all")}
+          onClick={() => onClickHandler("all")}
           className={`subtitle ${tabType === "all" ? "active" : ""} btn tab`}
         >
           All
         </Link>
         <Link
           to="/blocked"
-          onClick={() => setTabType("blocked")}
+          onClick={() => onClickHandler("blocked")}
           className={`subtitle ${
             tabType === "blocked" ? "active" : ""
           } btn tab`}

@@ -9,6 +9,9 @@ const DataProvider = ({ children }) => {
   const [BlockedCards, setBlockedCards] = useState([]);
   const [filtervalue, setFilterValue] = useState([]);
   const [tabType, setTabType] = useState("all");
+  const [openSearch, setOpenSearch] = useState(false);
+  const [searchFilter, setSearchFilter] = useState("");
+  const [searchCards, setSearchCards] = useState([]);
   useEffect(() => {
     axios
       .get(
@@ -21,6 +24,9 @@ const DataProvider = ({ children }) => {
     setAllCards(mainCards);
     setYourCards(mainCards.filter((card) => card.card_holder === "ashish"));
     setBlockedCards(mainCards.filter((card) => card.status === "blocked"));
+    if (tabType === "all") setSearchCards(mainCards);
+    else if (tabType === "your") setSearchCards(yourCards);
+    else if (tabType === "blocked") setSearchCards(BlockedCards);
   }, [mainCards]);
   return (
     <DataContext.Provider
@@ -39,6 +45,12 @@ const DataProvider = ({ children }) => {
         setFilterValue,
         tabType,
         setTabType,
+        openSearch,
+        setOpenSearch,
+        searchFilter,
+        setSearchFilter,
+        searchCards,
+        setSearchCards,
       }}
     >
       {children}

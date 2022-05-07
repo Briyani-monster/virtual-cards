@@ -218,9 +218,8 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .filter.active input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  visibility: visible;
+  opacity: 1;
 }
 
 .filter__search {
@@ -234,7 +233,10 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .filter__search input {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.1s linear;
+  transition: visibility 0s, opacity 0.1s linear;
   border: 1px solid #868e96;
   padding: 3px 8px;
   outline: none;
@@ -243,6 +245,7 @@ a:link, a:visited, a:hover, a:active {
 
 .filter__search .MuiSvgIcon-root {
   font-size: 3rem;
+  cursor: pointer;
 }
 
 .filter_filterBtn {
