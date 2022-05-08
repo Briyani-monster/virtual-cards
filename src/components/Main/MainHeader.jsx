@@ -5,10 +5,27 @@ import { Link } from "react-router-dom";
 import { DataContext } from "../../context/DataProvider";
 
 const MainHeader = () => {
-  const { setTabType, tabType, setOpenSearch } = useContext(DataContext);
+  const {
+    setTabType,
+    tabType,
+    allCards,
+    yourCards,
+    BlockedCards,
+    setFilteredCards,
+    setOpenfilter,
+    setCardholder,
+    setBurner,
+    setSubscription,
+  } = useContext(DataContext);
   const onClickHandler = (data) => {
     setTabType(data);
-    // setOpenSearch(false);
+    if (data === "all") setFilteredCards(allCards);
+    else if (data === "blocked") setFilteredCards(BlockedCards);
+    else if (data === "your") setFilteredCards(yourCards);
+    setBurner(false);
+    setSubscription(false);
+    setCardholder("");
+    setOpenfilter(false);
   };
   return (
     <div className="main__header">

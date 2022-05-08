@@ -207,6 +207,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .filter {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,6 +262,164 @@ a:link, a:visited, a:hover, a:active {
   border-radius: 5px;
   padding: 5px 10px;
   cursor: pointer;
+}
+
+.filter-modal {
+  position: absolute;
+  background-color: #fff;
+  top: 70%;
+  width: 40rem;
+  right: 5%;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  color: #232323;
+}
+
+.filter-modal > h4 {
+  padding: 15px 0px 15px 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 100%;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.filter-modal__types {
+  padding: 2rem 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.filter-modal__types h4 {
+  padding-bottom: 10px;
+}
+
+.filter-modal__types__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.filter-modal__types__body input[type="checkbox"] + label {
+  display: block;
+  margin: 0.2rem;
+  cursor: pointer;
+  padding: 0.2rem;
+}
+
+.filter-modal__types__body input[type="checkbox"] {
+  display: none;
+}
+
+.filter-modal__types__body input[type="checkbox"] + label:before {
+  content: "\2714";
+  border: 0.1rem solid #5c7cfa;
+  border-radius: 0.2rem;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding-left: 0.2rem;
+  padding-bottom: 0.3rem;
+  margin-right: 0.2rem;
+  vertical-align: bottom;
+  color: transparent;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.filter-modal__types__body input[type="checkbox"] + label:active:before {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.filter-modal__types__body input[type="checkbox"]:checked + label:before {
+  background-color: #5c7cfa;
+  border-color: #5c7cfa;
+  color: #fff;
+}
+
+.filter-modal__types__body__type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.filter-modal__cardholder {
+  padding: 2rem 20px;
+}
+
+.filter-modal__cardholder h4 {
+  padding-bottom: 10px;
+}
+
+.filter-modal__cardholder select {
+  width: 100%;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  color: #868e96;
+  border: 1px solid #868e96;
+  outline: none;
+}
+
+.filter-modal__footer {
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.filter-modal__footer a:link, .filter-modal__footer a:active, .filter-modal__footer a:visited {
+  padding: 10px 6rem;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #e64980;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.filter-modal__footer a:hover {
+  -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+.filter-modal__footer a:active {
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateX(-1px);
+          transform: translateX(-1px);
+}
+
+.filter-modal__footer .button.apply {
+  background-color: #fff;
+  color: #232323;
+  text-transform: capitalize;
 }
 
 .cards {

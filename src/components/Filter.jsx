@@ -3,10 +3,18 @@ import SearchSharpIcon from "@mui/icons-material/SearchSharp";
 import FilterListSharpIcon from "@mui/icons-material/FilterListSharp";
 import { DataContext } from "../context/DataProvider";
 import { Link } from "react-router-dom";
+import FilterModal from "./FilterModal/FilterModal";
 
 const Filter = () => {
-  const { openSearch, setOpenSearch, searchFilter, setSearchFilter, tabType } =
-    useContext(DataContext);
+  const {
+    openSearch,
+    setOpenSearch,
+    openfilter,
+    setOpenfilter,
+    searchFilter,
+    setSearchFilter,
+    tabType,
+  } = useContext(DataContext);
   const onClickHandler = () => {
     setOpenSearch((prev) => !prev);
     setSearchFilter("");
@@ -16,6 +24,7 @@ const Filter = () => {
   };
   return (
     <div className={`filter ${openSearch && "active"}`}>
+      {openfilter && <FilterModal />}
       <div className="filter__search ">
         <input
           type="text"
@@ -29,7 +38,10 @@ const Filter = () => {
           <SearchSharpIcon onClick={onClickHandler} />
         </Link>
       </div>
-      <button className="filter_filterBtn btn">
+      <button
+        className="filter_filterBtn btn"
+        onClick={() => setOpenfilter((prev) => !prev)}
+      >
         <FilterListSharpIcon />
         <span>Filter</span>
       </button>

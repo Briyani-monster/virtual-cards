@@ -22,6 +22,7 @@ Task to be done:-
   - [x] installing react-router and setting up routing
   - [x] tab functionality is completed
   - [x] added search functionality
+  - [x] added filter functionality
 - [ ] adding infinite scrolling
 
 ## Typography selected for project
