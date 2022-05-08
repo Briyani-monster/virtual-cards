@@ -1,7 +1,14 @@
 @media screen and (max-width: 57em) {
+  .main__header {
+    &__right {
+      visibility: hidden;
+    }
+  }
   .cards {
-    display: grid;
-    grid-template-columns: 1fr;
+    &.grid {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
   }
 }
 @media screen and (max-width: 44em) {

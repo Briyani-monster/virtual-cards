@@ -14,6 +14,7 @@ const DataProvider = ({ children }) => {
   const [tabType, setTabType] = useState("all");
   const [openSearch, setOpenSearch] = useState(false);
   const [openfilter, setOpenfilter] = useState(false);
+  const [gridView, setgridView] = useState(true);
   const [searchFilter, setSearchFilter] = useState("");
   const [searchCards, setSearchCards] = useState([]);
   const [cardHolder, setCardHolder] = useState([]);
@@ -76,6 +77,8 @@ const DataProvider = ({ children }) => {
         setOpenfilter,
         displaySize,
         setDisplaySize,
+        gridView,
+        setgridView,
       }}
     >
       {children}

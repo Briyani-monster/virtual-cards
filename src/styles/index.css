@@ -424,10 +424,23 @@ a:link, a:visited, a:hover, a:active {
 
 .cards {
   padding: 2rem 10rem;
+}
+
+.cards.grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  row-gap: 5rem;
+  -webkit-column-gap: 5rem;
+          column-gap: 5rem;
+}
+
+.cards.grid-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   row-gap: 5rem;
   -webkit-column-gap: 5rem;
           column-gap: 5rem;
@@ -588,7 +601,10 @@ a:link, a:visited, a:hover, a:active {
 }
 
 @media screen and (max-width: 57em) {
-  .cards {
+  .main__header__right {
+    visibility: hidden;
+  }
+  .cards.grid {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;

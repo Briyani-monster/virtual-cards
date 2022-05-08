@@ -1,7 +1,15 @@
 .cards {
   padding: 2rem 10rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 5rem;
-  column-gap: 5rem;
+  &.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5rem;
+    column-gap: 5rem;
+  }
+  &.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+    column-gap: 5rem;
+  }
 }

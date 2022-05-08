@@ -6,12 +6,37 @@ Api used for this Project (mock api created for this project) [Mock api hosted h
 
 # Index
 
+- [Functionality Implemented](#Functionality-Implemented)
 - [Setup](#setup)
 - [avialable script](#available-Scripts)
 - [Typography](#Typography-selected)
 - [Setting Up icons](#SettingUp-icon)
 - [Setting Up Axios](#SetitingUp-Axios)
 - [Tasks](#Task-to-be-done)
+
+## Functionality-Implemented
+
+1. Created a page with [Your, all, blocked] cards tabs.
+
+   1. Handle tab routing through URLs.
+
+2. Cards is of two types ['burner', "subscription"]
+
+   1. burner cards show expiry in card design
+   2. subscription card show limit as shown
+   3. A card type is displayed on the top right corner of each card, by icon.
+
+3. When a user clicks on **your** tab they should see cards belonging to them `card_holder` `Ashish`(owner Name).
+
+4. Designed the card listing layout as per the design given below.
+
+   1. infinite scroll is feature is added.
+   2. Implemented search by card name.
+   3. Implemented filter dropdown as shown in the figure below.
+
+5. added some responsiveness.
+
+6. added grid view and table view feature.
 
 ## setup
 

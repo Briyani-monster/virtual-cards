@@ -9,8 +9,14 @@ import { DataContext } from "../context/DataProvider";
 import Card from "./Card/Card";
 
 const FilterCards = ({ cards }) => {
-  const { cardholder, burner, subscription, displaySize, setDisplaySize } =
-    useContext(DataContext);
+  const {
+    cardholder,
+    burner,
+    subscription,
+    displaySize,
+    setDisplaySize,
+    gridView,
+  } = useContext(DataContext);
   const [index, setIndex] = useState(0);
   const [loading, setLoading] = useState(false);
   const Observer = useRef();
@@ -34,7 +40,7 @@ const FilterCards = ({ cards }) => {
     setIndex(cards.length <= displaySize ? cards.length : displaySize);
   }, [displaySize, cards]);
   return (
-    <div className="cards">
+    <div className={`cards ${gridView ? "grid" : "grid-1"}`}>
       {cards
         .filter((card) =>
           cardholder !== "" ? card.card_holder === cardholder : true

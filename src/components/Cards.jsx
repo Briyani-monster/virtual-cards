@@ -10,7 +10,8 @@ import Card from "./Card/Card";
 
 const Cards = ({ cards }) => {
   // console.log(mainCards);
-  const { searchFilter, displaySize, setDisplaySize } = useContext(DataContext);
+  const { searchFilter, displaySize, setDisplaySize, gridView } =
+    useContext(DataContext);
   const [index, setIndex] = useState(0);
   const [loading, setLoading] = useState(false);
   const Observer = useRef();
@@ -34,7 +35,7 @@ const Cards = ({ cards }) => {
     setIndex(cards.length <= displaySize ? cards.length : displaySize);
   }, [displaySize, cards]);
   return (
-    <div className="cards">
+    <div className={`cards ${gridView ? "grid" : "grid-1"}`}>
       {cards
         .slice(0, index)
         .filter((card) => {

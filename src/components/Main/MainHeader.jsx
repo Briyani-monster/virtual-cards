@@ -17,6 +17,7 @@ const MainHeader = () => {
     setBurner,
     setSubscription,
     setSearchCards,
+    setgridView,
   } = useContext(DataContext);
   const onClickHandler = (data) => {
     setTabType(data);
@@ -63,8 +64,8 @@ const MainHeader = () => {
         </Link>
       </div>
       <div className="main__header__right">
-        <GridViewSharpIcon />
-        <TableRowsSharpIcon />
+        <GridViewSharpIcon onClick={() => setgridView(true)} />
+        <TableRowsSharpIcon onClick={() => setgridView(false)} />
       </div>
     </div>
   );
