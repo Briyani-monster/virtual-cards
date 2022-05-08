@@ -1,7 +1,7 @@
 # virtual-cards
 
-[https://virtualcardsproject.netlify.app/](Live Site Link)
-[https://raw.githubusercontent.com/Briyani-monster/virtual-card/gh-pages/data.json](Mock api hosted here)
+[Live Site Link](https://virtualcardsproject.netlify.app/).
+[Mock api hosted here](https://raw.githubusercontent.com/Briyani-monster/virtual-card/gh-pages/data.json).
 
 Task to be done:-
 
