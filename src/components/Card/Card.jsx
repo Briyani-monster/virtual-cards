@@ -5,6 +5,7 @@ import Chart from "./Chart";
 import ChartDescription from "./ChartDescription";
 import CardBody from "./CardBody";
 const Card = ({
+  refrence,
   spent,
   availabletospend,
   expiry,
@@ -14,7 +15,7 @@ const Card = ({
   cardholder,
 }) => {
   return (
-    <div className="card">
+    <div className={`card `} ref={refrence}>
       <div className={"card__header"}>
         <div className="card__header__left">
           <h3 className="h4">{name}</h3>

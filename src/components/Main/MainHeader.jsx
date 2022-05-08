@@ -16,12 +16,20 @@ const MainHeader = () => {
     setCardholder,
     setBurner,
     setSubscription,
+    setSearchCards,
   } = useContext(DataContext);
   const onClickHandler = (data) => {
     setTabType(data);
-    if (data === "all") setFilteredCards(allCards);
-    else if (data === "blocked") setFilteredCards(BlockedCards);
-    else if (data === "your") setFilteredCards(yourCards);
+    if (data === "all") {
+      setFilteredCards(allCards);
+      setSearchCards(allCards);
+    } else if (data === "blocked") {
+      setFilteredCards(BlockedCards);
+      setSearchCards(BlockedCards);
+    } else if (data === "your") {
+      setFilteredCards(yourCards);
+      setSearchCards(yourCards);
+    }
     setBurner(false);
     setSubscription(false);
     setCardholder("");

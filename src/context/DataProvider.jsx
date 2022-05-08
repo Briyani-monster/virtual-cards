@@ -17,6 +17,7 @@ const DataProvider = ({ children }) => {
   const [searchFilter, setSearchFilter] = useState("");
   const [searchCards, setSearchCards] = useState([]);
   const [cardHolder, setCardHolder] = useState([]);
+  const [displaySize, setDisplaySize] = useState(10);
   const fetchurl = `https://raw.githubusercontent.com/Briyani-monster/virtual-card/gh-pages/data.json`;
   useEffect(() => {
     axios.get(fetchurl).then((res) => {
@@ -73,6 +74,8 @@ const DataProvider = ({ children }) => {
         setCardholder,
         openfilter,
         setOpenfilter,
+        displaySize,
+        setDisplaySize,
       }}
     >
       {children}
