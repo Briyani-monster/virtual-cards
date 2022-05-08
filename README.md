@@ -1,31 +1,18 @@
 # virtual-cards
 
-[Live Site Link](https://virtualcardsproject.netlify.app/).
-[Mock api hosted here](https://raw.githubusercontent.com/Briyani-monster/virtual-card/gh-pages/data.json).
+Live link of my website [Live Link](https://virtualcardsproject.netlify.app/).
 
-Task to be done:-
+Api used for this Project[Mock api hosted here](https://raw.githubusercontent.com/Briyani-monster/virtual-card/gh-pages/data.json).
 
-- [x] creating static layout
+# How to use this Project in your environment
 
-  - [x] **PREPARATION** adding reset.scss typography.scss and variable.scss
-    - [x] typography is set according to font size,weight and letter spacing
-    - [x] variable file colors are defined color selected from reference image as well as open color website
-    - [x] reseting cross browser margin padding to website
-  - [x] creating Component folder and creating header component
-    - [x] installing icons class
-    - [x] starting main component
-    - [x] styling filter
-    - [x] styling cards
-
-- [x] adding functionality to website
-  - [x] installing axios
-  - [x] setting up context
-  - [x] installing react-router and setting up routing
-  - [x] tab functionality is completed
-  - [x] added search functionality
-  - [x] added filter functionality
-- [x] adding infinite scrolling
-- [x] Adding responsiveness to website
+- **PREQUIST:-**
+  - we need node js and npm [refer](https://phoenixnap.com/kb/install-node-js-npm-on-windows)
+- To use this project in your desktop first you need to clone it in your desktop For cloning [refer](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
+- after cloning open cmd window in Project folder install all node module required  
+   `npm install` or `npm i`.
+- after this to run the stepis completed to run on localhost
+  `npm start`
 
 ## Typography selected for project
 
@@ -79,7 +66,7 @@ Task to be done:-
 ## for setting up icon installation
 
     1. use material ui
-    2. `npm install @mui/material@5.6.4 @emotion/react@11.9.0 @emotion/styled@11.8.1`
+    2. ` npm install @mui/material@5.6.4 @emotion/react@11.9.0 @emotion/styled@11.8.1 `
     3. `npm install @mui/icons-material@5.6.2`
 
     after this we can import by searching here from https://mui.com/material-ui/material-icons/#main-content
@@ -92,6 +79,30 @@ For fetching better way in react
 
 import axios
 `import axios from 'axios'`
+
+### Task to be done:-
+
+- [x] creating static layout
+
+  - [x] **PREPARATION** adding reset.scss typography.scss and variable.scss
+    - [x] typography is set according to font size,weight and letter spacing
+    - [x] variable file colors are defined color selected from reference image as well as open color website
+    - [x] reseting cross browser margin padding to website
+  - [x] creating Component folder and creating header component
+    - [x] installing icons class
+    - [x] starting main component
+    - [x] styling filter
+    - [x] styling cards
+
+- [x] adding functionality to website
+  - [x] installing axios
+  - [x] setting up context
+  - [x] installing react-router and setting up routing
+  - [x] tab functionality is completed
+  - [x] added search functionality
+  - [x] added filter functionality
+- [x] adding infinite scrolling
+- [x] Adding responsiveness to website
 
 # Getting Started with Create React App
 
