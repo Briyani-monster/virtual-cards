@@ -38,6 +38,10 @@ Api used for this Project (mock api created for this project) [Mock api hosted h
 
 6. added grid view and table view feature.
 
+7. Implement search by card name.
+
+8. Implement filter dropdown as dropdown.
+
 ## setup
 
 - **PREQUIST**
