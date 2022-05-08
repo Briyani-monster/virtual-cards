@@ -4,7 +4,7 @@ Mock api hosted here:- https://raw.githubusercontent.com/Briyani-monster/virtual
 
 Task to be done:-
 
-- [ ] creating static layout
+- [x] creating static layout
 
   - [x] **PREPARATION** adding reset.scss typography.scss and variable.scss
     - [x] typography is set according to font size,weight and letter spacing
@@ -16,14 +16,14 @@ Task to be done:-
     - [x] styling filter
     - [x] styling cards
 
-- [ ] adding functionality to website
+- [x] adding functionality to website
   - [x] installing axios
   - [x] setting up context
   - [x] installing react-router and setting up routing
   - [x] tab functionality is completed
   - [x] added search functionality
   - [x] added filter functionality
-- [ ] adding infinite scrolling
+- [x] adding infinite scrolling
 
 ## Typography selected for project
 
