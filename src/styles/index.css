@@ -98,7 +98,7 @@ a:link, a:visited, a:hover, a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
+  gap: 1rem;
 }
 
 .header__left .header-link {
@@ -515,6 +515,7 @@ a:link, a:visited, a:hover, a:active {
 .card__body__btn {
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 1.2rem;
   color: #868e96;
   padding: 3px 10px;
   border-radius: 5px;
@@ -584,5 +585,74 @@ a:link, a:visited, a:hover, a:active {
 
 .card__chart__description__spent__heading div, .card__chart__description__available__heading div {
   font-weight: 400;
+}
+
+@media screen and (max-width: 57em) {
+  .cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 44em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 37em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 33em) {
+  html {
+    font-size: 45%;
+  }
+  .header {
+    padding: 3rem 3rem;
+  }
+  .header .header-link span {
+    display: none;
+  }
+  .main__header {
+    padding: 1rem 2rem;
+  }
+  .cards {
+    padding: 1rem 5rem;
+  }
+}
+
+@media screen and (max-width: 27em) {
+  html {
+    font-size: 42%;
+  }
+}
+
+@media screen and (max-width: 25em) {
+  html {
+    font-size: 38%;
+  }
+}
+
+@media screen and (max-width: 23em) {
+  html {
+    font-size: 33%;
+  }
+}
+
+@media screen and (max-width: 18em) {
+  html {
+    font-size: 30%;
+  }
+}
+
+@media screen and (max-width: 16em) {
+  html {
+    font-size: 25%;
+  }
 }
 /*# sourceMappingURL=index.css.map */

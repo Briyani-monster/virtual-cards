@@ -1,0 +1,61 @@
+@media screen and (max-width: 57em) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 44em) {
+  html {
+    font-size: 55%;
+  }
+}
+@media screen and (max-width: 37em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 33em) {
+  html {
+    font-size: 45%;
+  }
+  .header {
+    padding: 3rem 3rem;
+
+    & .header-link {
+      & span {
+        display: none;
+      }
+    }
+  }
+  .main__header {
+    padding: 1rem 2rem;
+  }
+  .cards {
+    padding: 1rem 5rem;
+  }
+}
+@media screen and (max-width: 27em) {
+  html {
+    font-size: 42%;
+  }
+}
+@media screen and (max-width: 25em) {
+  html {
+    font-size: 38%;
+  }
+}
+@media screen and (max-width: 23em) {
+  html {
+    font-size: 33%;
+  }
+}
+@media screen and (max-width: 18em) {
+  html {
+    font-size: 30%;
+  }
+}
+@media screen and (max-width: 16em) {
+  html {
+    font-size: 25%;
+  }
+}

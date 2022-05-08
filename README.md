@@ -24,6 +24,7 @@ Task to be done:-
   - [x] added search functionality
   - [x] added filter functionality
 - [x] adding infinite scrolling
+- [x] Adding responsiveness to website
 
 ## Typography selected for project
 
