@@ -2,11 +2,20 @@
 
 Live link of my website [Live Link](https://virtualcardsproject.netlify.app/).
 
-Api used for this Project[Mock api hosted here](https://raw.githubusercontent.com/Briyani-monster/virtual-card/gh-pages/data.json).
+Api used for this Project [Mock api hosted here](https://raw.githubusercontent.com/Briyani-monster/virtual-card/gh-pages/data.json).
 
-# How to use this Project in your environment
+# Index
 
-- **PREQUIST:-**
+- [Setup](#setup)
+- [avialable script](#available-Scripts)
+- [Typography](#Typography-selected)
+- [Setting Up icons](#SettingUp-icon)
+- [Setting Up Axios](#SetitingUp-Axios)
+- [Tasks](#Task-to-be-done)
+
+## setup
+
+- **PREQUIST**
   - you'll need node js and npm for installation [refer](https://phoenixnap.com/kb/install-node-js-npm-on-windows)
 - To use this project in your desktop first you need to clone it in your desktop For cloning [refer](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 - after cloning open cmd window in Project folder install all node module required  
@@ -14,7 +23,7 @@ Api used for this Project[Mock api hosted here](https://raw.githubusercontent.co
 - after this to run the stepis completed to run on localhost
   `npm start`
 
-## Information About Available Scripts
+## available-Scripts
 
 In the project directory, you can run:
 
@@ -51,7 +60,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Typography selected for project
+## Typography-selected
 
 **key points**
 
@@ -100,7 +109,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
   - font-weight: 400;
   - letter-spacing: 1.25px;
 
-## for setting up icon installation
+## SettingUp-icon
 
     1. use material ui
     2. ` npm install @mui/material@5.6.4 @emotion/react@11.9.0 @emotion/styled@11.8.1 `
@@ -109,7 +118,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
     after this we can import by searching here from https://mui.com/material-ui/material-icons/#main-content
     like this `import AddIcon from '@mui/icons-material/Add';`
 
-## For Installing Axios
+## SetitingUp-Axios
 
 For fetching better way in react
 `npm install axios@0.24.0`
@@ -117,7 +126,7 @@ For fetching better way in react
 import axios
 `import axios from 'axios'`
 
-### Task to be done:-
+## Task-to-be-done
 
 - [x] creating static layout
 
