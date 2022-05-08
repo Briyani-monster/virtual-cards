@@ -5,6 +5,7 @@ import Filter from "./Filter";
 import MainHeader from "./Main/MainHeader";
 import { Routes, Route } from "react-router-dom";
 import FilterCards from "./FilterCards";
+import { Footer } from "./Footer";
 const Main = () => {
   const { allCards, yourCards, BlockedCards, searchCards, filteredCards } =
     useContext(DataContext);
@@ -20,6 +21,7 @@ const Main = () => {
         <Route path="/search" element={<Cards cards={searchCards} />} />
         <Route path="/filter" element={<FilterCards cards={filteredCards} />} />
       </Routes>
+      <Footer />
     </>
   );
 };

@@ -423,6 +423,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .cards {
+  min-height: 50vh;
   padding: 2rem 10rem;
 }
 
@@ -598,6 +599,15 @@ a:link, a:visited, a:hover, a:active {
 
 .card__chart__description__spent__heading div, .card__chart__description__available__heading div {
   font-weight: 400;
+}
+
+.footer {
+  margin-top: 3rem;
+  bottom: 0;
+  text-align: center;
+  padding: 2rem 0;
+  color: #e64980;
+  background-color: #ffdeeb;
 }
 
 @media screen and (max-width: 57em) {
