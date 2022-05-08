@@ -2,7 +2,7 @@
 
 Live link of my website [Live Link](https://virtualcardsproject.netlify.app/).
 
-Api used for this Project [Mock api hosted here](https://raw.githubusercontent.com/Briyani-monster/virtual-card/gh-pages/data.json).
+Api used for this Project (mock api created for this project) [Mock api hosted here](https://raw.githubusercontent.com/Briyani-monster/virtual-card/gh-pages/data.json).
 
 # Index
 
